@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientDashboard"
+    >
+
+    <ImageView
+        android:id="@+id/bgImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg2"
+        android:alpha="0.2"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie2"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/water" />
+
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order 20 Litre Water Jar"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottie2"
+        app:layout_constraintVertical_bias="0"/>
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Quantity:"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:textSize="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Price:"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:textSize="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.457"/>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="0"
+        android:textSize="27dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toEndOf="@id/rate"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <TextView
+        android:id="@+id/rupees"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Rupees"
+        android:textSize="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/money"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="59dp"
+        android:layout_height="51dp"
+        android:background="@drawable/button2_bg"
+        android:text="+"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/quantity"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="4dp"
+        android:text="0"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plus"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="59dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="72dp"
+        android:background="@drawable/button2_bg"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0."
+        app:layout_constraintStart_toEndOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <Button
+        android:id="@+id/checkout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2_bg"
+        android:text="Checkout"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:layout_constraintVertical_bias="0.857" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

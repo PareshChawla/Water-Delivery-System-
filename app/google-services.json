@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "978088832452",
+    "firebase_url": "https://jagdambaenterprises-6b41e-default-rtdb.firebaseio.com",
+    "project_id": "jagdambaenterprises-6b41e",
+    "storage_bucket": "jagdambaenterprises-6b41e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978088832452:android:c5860ebdc5f37b78a40891",
+        "android_client_info": {
+          "package_name": "com.example.notworking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978088832452-33s6faq6t199bssfsqaermgjc370bv9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQIH1Slo_QrQDdYHo8mkNYvZ6tNGufuVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978088832452-33s6faq6t199bssfsqaermgjc370bv9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
